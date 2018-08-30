@@ -13,7 +13,7 @@
     <ul class="site-navigation">
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
-      <li class="site-navigation-current">><a href="#">Магазин</a></li>
+      <li class="site-navigation-current"><a href="#">Магазин</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
     <ul class="user-navigation">
@@ -25,14 +25,85 @@
   <h1 class="page-title">Магазин готовых шаблонов</h1>
   <section class="filters">
     <h2 class="visually-hidden">Фильтр товаров</h2>
-    <!-- Форма -->
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>Стоимоисть:</legend>
+          <div class="price-range">
+            Диапазон цен
+          </div>
+        <p>
+          <label for="price-from">от</label>
+          <input type="text" id="price-from" name="from">
+        </p>
+        <p>
+          <label for="price-to">от</label>
+          <input type="text" id="price-to" name="to">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Сетка:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="adaptive" id="filter-adaptive">
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio"  name="grid-group" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Особенности:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantageBlock" id="filter-advantage-block">
+              <label for="filter-advantage-block">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галлерея</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+      </fieldset>
+    </form>
   </section>
   <section class="sorting-order">
     <h2>Сортировать</h2>
     <ul class="sorting-types">
-      <li>по цене</li>
-      <li class="sorting-types-current">по типу</li>
-      <li>по названию</li>
+      <li>
+        <button class="button sorting-button">по цене</button>
+      </li>
+      <li>
+        <button class="button sorting-button-current">по типу</button>
+      </li>
+      <li>
+        <button class="button sorting-button">по названию</button>
+      </li>
+    </ul>
+    <ul class="sorting-types">
+      <li>
+        <button class="button sorting-button-down"><img src="img/icon-down-dir.svg" alt="Сортировать по убыванию"></button>
+      </li>
+      <li>
+        <button class="button sorting-button-up-current"><img src="img/icon-up-dir.svg" alt="Сортировать по возрастанию"></button>
+      </li>
     </ul>
   </section>
   <section class="catalog">
