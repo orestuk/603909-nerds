@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a>
+      <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="368" height="153" alt="Логотип Нёрдс">
       </a>
       <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
+        <li class="site-navigation-active"><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
@@ -20,42 +23,42 @@
         <li><a href="#">Корзина</a></li>
       </ul>
     </nav>
-  </header>
-  <main class="container">
     <h1 class="visually-hidden">Студия Дизайна Hёрдс</h1>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <div class="advantages-slide">
-        <div class="discover">
+      <div class="advantages-item">
+        <div class="advantage-text">
           <h3>Долго, дорого, скурпулезно.</h3>
           <p>математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <a href="#">Узнать больше</a>
+          <a class="button advantage-button" href="#">узнать больше</a>
         </div>
-        <div class="slide">
+        <div class="advantage-img">
           <img src="img/slide1.png" alt="Слайд 1">
         </div>
       </div>
-      <div class="advantages-slide">
-        <div class="discover">
+      <div class="advantage-item">
+        <div class="advantage-text">
           <h3>Любим математику как никто другой</h3>
           <p>математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <a href="#">Узнать больше</a>
+          <a class="button advantage-button" href="#">узнать больше</a>
         </div>
-        <div class="slide">
+        <div class="advantage-img">
           <img src="img/slide2.png" alt="Слайд 2">
         </div>
       </div>
-      <div class="advantages-slide">
-        <div class="discover">
+      <div class="advantage-item">
+        <div class="advantage-text">
           <h3>Только ночь, только хардкор</h3>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#">Узнать больше</a>
+          <a class="button advantage-button" href="#">узнать больше</a>
         </div>
-        <div class="slide">
+        <div class="advantage-img">
           <img src="img/slide3.png" alt="Слайд 3">
         </div>
       </div>
     </section>
+  </header>
+  <main class="container">
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
@@ -63,29 +66,29 @@
           <h3>Веб-сайты</h3>
           <img src="img/illustration-1.jpg">
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button service-button service-site-button" href="#">Заказать</a>
         </li>
         <li class="service-item">
           <h3>Приложения</h3>
           <img src="img/illustration-2.jpg">
           <p>Покорите топ-10 приложений на AppStore и Goodle Play</p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button service-button service-application-button" href="#">Заказать</a>
         </li>
         <li class="service-item">
           <h3>Презентации</h3>
           <img src="img/illustration-3.jpg">
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button service-button service-presentation-button" href="#">Заказать</a>
         </li>
       </ul>
     </section>
     <section class="about-us">
-      <div class="work">
-        <h2 class="visually-hidden">Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
+      <div class="about-us-work">
+        <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
         <p>
           Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
         </p>
-        <p>Выполняем заказы на разработку:</p>
+        <h3>Выполняем заказы на разработку:</h3>
         <ul>
           <li>
             Веб-сайтов любой сложности
@@ -98,20 +101,21 @@
           </li>
         </ul>
       </div>
-      <div class="figures">
+      <div class="about-us-figures">
         <img src="img/nerds-illustration.jpg" alt="Числа">
+        <h3>с 2004 года Любим точность во всем:</h3>
         <ul class="figures-list">
           <li class="figures-item">
-            <p class="figures-percent">146%</p>
-            <p>Уровень самоотдачи</p>
+            <p class="figures-percent">146<sup>%</sup></p>
+            <p class="figures-text">Уровень самоотдачи</p>
           </li>
           <li class="figures-item">
-            <p class="figures-percent">100%</p>
-            <p>Соблюдение строков</p>
+            <p class="figures-percent">100<sup>%</sup></p>
+            <p class="figures-text">Соблюдение строков</p>
           </li>
           <li class="figures-item">
-            <p class="figures-percent">50%</p>
-            <p>Минимальная предоплата</p>
+            <p class="figures-percent">50<sup>%</sup></p>
+            <p class="figures-text">Минимальная предоплата</p>
           </li>
         </ul>
       </div>
@@ -119,10 +123,10 @@
     <section class="clients">
       <h2 class="visually-hidden">Наши клиенты</h2>
       <ul class="clients-list">
-        <li class="clients-item"><img src="img/logo-1.png" alt="HTML Academy"></li>
-        <li class="clients-item"><img src="img/logo-2.png" alt="Borodinski"></li>
-        <li class="clients-item"><img src="img/logo-3.png" alt="Pink"></li>
-        <li class="clients-item"><img src="img/logo-4.png" alt="Mishka"></li>
+        <li class="clients-item"><a href="#"><img src="img/logo-1.png" alt="HTML Academy"></a></li>
+        <li class="clients-item"><a href="#"><img src="img/logo-2.png" alt="Borodinski"></a></li>
+        <li class="clients-item"><a href="#"><img src="img/logo-3.png" alt="Pink"></a></li>
+        <li class="clients-item"><a href="#"><img src="img/logo-4.png" alt="Mishka"></a></li>
       </ul>
     </section>
   </main>
@@ -139,19 +143,13 @@
       <p>
         тел. +7 (812) 275-75-75
       </p>
-      <a class="button" href="#">Напишите нам</a>
+      <a class="button footer-contacts-button" href="#">Напишите нам</a>
     </section>
     <div class="footer-social">
       <ul class="footer-networks">
-        <li>
-          <a class="social-button" href="#"><img src="img/vk-icon.svg" alt="ВКонтакте"></a>
-        </li>
-        <li>
-          <a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
-        </li>
-        <li>
-          <a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a>
-        </li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
       <div>
         <p class="footer-friends">Давайте дружить, это выгодно!</p>
@@ -174,7 +172,7 @@
         <label for="question-text">Текст письма:</label>
         <textarea id="question-text" name="text" rows="4" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="button write-us-button" type="submit">Отправить</button>
     </form>
     <span class="modal-close" tabindex="0">Закрыть</span>
   </section>
