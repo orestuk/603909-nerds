@@ -51,7 +51,7 @@ a {
 
   background-color: #eeeeee;
 
-  min-height: 493px;
+  min-height: 490px;
 }
 
 .main-navigation {
@@ -148,8 +148,12 @@ a {
 }
 
 /********* Index / Advantages *******/
-.advantage-item {
+/*.advantages {
   min-height: 415px;
+}*/
+
+.advantage-item {
+  min-height: 410px;
 
   padding-top: 1px;
 
@@ -199,21 +203,56 @@ a {
 
 /************* Services ******************/
 
+.services {
+  padding-right: 60px;
+  min-height: 348px;
+  /*Временно */
+  *outline: 1px solid red;
+}
+
 .services-list
 {
+  display: flex;
+  justify-content: space-between;
+  min-height: 350px;
+
   list-style: none;
+  padding:0;
+  margin:0;
+
+  /*Временно */
+  *outline: 1px solid red;
+}
+
+.service-item {
+  width: 300px;
+  min-height: 348px;
+  position: relative;
 }
 
 .service-item h3 {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 19px;
 }
 
 .service-button
 {
+  position:absolute;
+  bottom: 0;
+  display: block;
+
+  width:140px;
+
+  line-height: 30px;
+  text-align: center;
+  font-weight: normal;
   color: #ffffff;
+
+  border-radius: 3px;
+
 }
 
 .service-button:active
