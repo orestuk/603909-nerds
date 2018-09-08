@@ -1,8 +1,15 @@
+.visually-hidden {
+  display: none;
+}
+
 body {
+  width: 1440px;
+  height: 2476px;
+
   margin: 0;
   padding: 0;
 
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -13,17 +20,12 @@ a {
   text-decoration: none;
 }
 
-header
-{
-  background-color: #eeeeee;
-}
-
 /***** Button *********/
 
 .button {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
@@ -33,11 +35,74 @@ header
   border: none;
 }
 
+/****** container **********/
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /**** main-header *********/
 
+.main-header {
+  margin-bottom: 80px;
+  padding-top: 50px;
+
+  background-color: #eeeeee;
+
+  min-height: 493px;
+}
+
 .main-navigation {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 14px;
+
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: 500;
+
+  min-height: 65px;
+  /* Временно*/
+  *outline: 1px solid red;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+  margin-top: 25px;
+  padding: 0;
+  min-height: 30px;
+}
+
+.site-navigation {
+  width: 439px;
+  display: flex;
+  justify-content: space-between;
+
+  /* Временно*/
+  *outline: 1px solid red;
+}
+
+.user-navigation {
+  width: 75px;
+
+  margin-left: auto;
+  /* Временно*/
+  *outline: 1px solid red;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+
+  margin-right: 202px;
+
+  /* Временно*/
+  *outline: 1px solid red;
 }
 
 .main-header-logo:active,
@@ -50,11 +115,6 @@ header
 .main-header-logo:focus
 {
   opacity: 0.8;
-}
-
-.site-navigation,
-.user-navigation {
-  list-style: none;
 }
 
 .site-navigation a:link,
@@ -88,19 +148,41 @@ header
 }
 
 /********* Index / Advantages *******/
+.advantage-item {
+  min-height: 415px;
 
-.advantage-text h3
+  padding-top: 1px;
+
+  background: url("../img/slide1.png") 430px 50% no-repeat;
+}
+
+.advantage-item h3
 {
   font-size: 55px;
   line-height: 55px;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
+
+  margin-bottom: 28px;
+}
+
+.advantage-item p {
+  margin-bottom: 40px;
 }
 
 .advantage-button
 {
+  display: block;
+  width: 220px;
+  height: 29px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+
   color: #ffffff;
+
   background-color: #fb565a;
+  border-radius: 3px;
 }
 
 .advantage-button:hover,
@@ -196,7 +278,7 @@ header
 .about-us h2
 {
   font-size: 45px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 45px;
 
   text-transform: uppercase;
@@ -379,7 +461,7 @@ header
 
 .page-title{
   font-size: 55px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 55px;
   text-align: center;
 }

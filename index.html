@@ -3,60 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> <link href="css/normalize.css" rel="stylesheet">
     <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="368" height="153" alt="Логотип Нёрдс">
-      </a>
-      <ul class="site-navigation">
-        <li class="site-navigation-active"><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
-    <h1 class="visually-hidden">Студия Дизайна Hёрдс</h1>
-    <section class="advantages">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <div class="advantages-item">
-        <div class="advantage-text">
-          <h3>Долго, дорого, скурпулезно.</h3>
-          <p>математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <a class="button advantage-button" href="#">узнать больше</a>
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.svg" alt="Логотип Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation-active"><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <h1 class="visually-hidden">Студия Дизайна Hёрдс</h1>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantage-item advantage-slide-1">
+            <h3>Долго, дорого, <br>
+                скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br>
+                для вашего сайта или мобильного приложения</p>
+            <a class="button advantage-button" href="#">узнать больше</a>
         </div>
-        <div class="advantage-img">
-          <img src="img/slide1.png" alt="Слайд 1">
+        <div class="advantage-item advantage-slide-2 visually-hidden">
+            <h3>Любим математику как никто другой</h3>
+            <p>математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <a class="button advantage-button" href="#">узнать больше</a>
         </div>
-      </div>
-      <div class="advantage-item">
-        <div class="advantage-text">
-          <h3>Любим математику как никто другой</h3>
-          <p>математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <a class="button advantage-button" href="#">узнать больше</a>
+        <div class="advantage-item advantage-slide-3 visually-hidden">
+            <h3>Только ночь, только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button advantage-button" href="#">узнать больше</a>
         </div>
-        <div class="advantage-img">
-          <img src="img/slide2.png" alt="Слайд 2">
-        </div>
-      </div>
-      <div class="advantage-item">
-        <div class="advantage-text">
-          <h3>Только ночь, только хардкор</h3>
-          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="button advantage-button" href="#">узнать больше</a>
-        </div>
-        <div class="advantage-img">
-          <img src="img/slide3.png" alt="Слайд 3">
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </header>
   <main class="container">
     <section class="services">
