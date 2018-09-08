@@ -404,7 +404,7 @@ ul.figures-list {
 /***** clients ******/
 
 .clients {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .clients-list
@@ -453,23 +453,61 @@ ul.figures-list {
 
 /*********** main-footer *********/
 
-.footer-contacts h2
-{
-  font-weight: bold;
-  line-height: 30px;
-  text-transform: uppercase;
+.main-footer {
+  background: url("../img/map-marker.png") 822px 90px no-repeat,
+              url("../img/map.png") no-repeat;
 }
 
-.footer-contacts p
+.footer-contacts {
+  position: relative;
+  min-height: 416px;
+
+  *outline: 2px solid red;
+}
+
+.footer-contacts-info {
+  position: absolute;
+  top: 55px;
+
+
+  width: 319px;
+  height: 308px;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+
+  padding-top: 45px;
+  padding-left: 50px;
+
+  *outline: 2px solid red;
+}
+
+.footer-contacts-info h2
+{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  margin: 0 0 23px 0;
+}
+
+.footer-contacts-info p
 {
   line-height: 18px;
   color: #666666;
+  margin-bottom: 18px;
 }
 
 .footer-contacts-button
 {
+  display: block;
+  line-height: 30px;
+  width: 199px;
+  margin-top: 38px;
   color: #ffffff;
   background-color: #fb565a;
+  border-radius: 3px;
 }
 
 .footer-contacts-button:hover,
