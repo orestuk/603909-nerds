@@ -1,3 +1,5 @@
+html {     -webkit-font-smoothing: antialiased; }
+
 .visually-hidden {
   display: none;
 }
@@ -179,7 +181,7 @@ a {
   display: block;
   width: 220px;
   height: 29px;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 30px;
 
@@ -249,7 +251,7 @@ a {
 
   line-height: 30px;
   text-align: center;
-  font-weight: normal;
+  font-weight: 500;
   color: #ffffff;
 
   border-radius: 3px;
@@ -308,59 +310,135 @@ a {
   background-color: #e5a722;
 }
 
-/********** about-us  ********/
+/********** studio  ********/
 
-.about-us {
+.studio {
   display: flex;
+  justify-content: space-between;
 
+  min-height: 524px;
   border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
-.about-us-work {
-  width: 655px;
-}
-
-.about-us ul
+.studio ul
 {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.about-us h2
+.studio-work h2
 {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  margin-bottom: 35px;
 }
 
-.about-us h3
+.studio-work h3,
+.studio-figures h3
 {
+  font-size: 16px;
+  line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 38px;
+  margin-bottom: 24px;
 }
 
-.about-us .figures-percent
+.studio-work, .studio-figures
+{
+  box-sizing: border-box;
+}
+
+.studio .figures-percent
 {
   font-size: 45px;
   line-height: 10px;
   font-weight: bold;
 }
 
-.about-us .figures-text
+.studio .figures-text
 {
   font-size: 16px;
   line-height: 18px;
 }
 
+.studio-work {
+  width: 655px;
+  padding-top: 33px;
+}
+
+.studio-work li {
+  margin-bottom: 24px;
+  margin-left: 36px;
+}
+
+.studio-figures {
+  width: 360px;
+  padding-top: 38px;
+  text-align: center;
+  *outline: 2px solid red;
+}
+
+.studio-figures img {
+  margin-bottom: -10px;
+}
+
+ul.figures-list {
+  display: flex;
+  margin-top: -10px;
+  justify-content: space-between;
+}
+
+.figures-item{
+  width: 120px;
+  text-align: left;
+}
+
+.figures-item .figures-text{
+  margin-top: -6px;
+}
+
 /***** clients ******/
+
+.clients {
+  margin-bottom: 20px;
+}
+
 .clients-list
 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 183px;
+
+  box-sizing: border-box;
+
+  margin:0;
+  padding:0;
+  border-bottom: 2px solid #eeeeee;
+
   list-style: none;
 }
 
 .clients-item
 {
+  width: 260px;
+  box-sizing: border-box;
+
   opacity: 0.2;
+  text-align: center;
+
+  *outline: 1px solid red;
 }
+
+.clients-item a {
+  display: block;
+  vertical-align: center;
+;}
 
 .clients-item:hover,
 .clients-item:focus
