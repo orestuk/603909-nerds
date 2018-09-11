@@ -43,7 +43,7 @@ a {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  outline: 1px solid red;
+  *outline: 1px solid red;
 }
 
 /**** main-header *********/
@@ -667,7 +667,7 @@ ul.footer-networks{
   justify-content: space-between;
   margin-bottom: 75px;
 
-  outline: 1px solid red;
+  *outline: 1px solid red;
 }
 
 .catalog-header {
@@ -688,7 +688,7 @@ ul.footer-networks{
   width:  260px;
   min-height: 272px;
 
-  outline: 1px solid red;
+  *outline: 1px solid red;
 }
 
 .filter-form fieldset {
@@ -700,7 +700,6 @@ ul.footer-networks{
 .filter-form legend {
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: 1px;
   margin: 0;
   font-weight: bold;
 
@@ -730,7 +729,7 @@ ul.footer-networks{
   flex-direction: column;
 
   width: 760px;
-  outline: 1px solid red;
+  *outline: 1px solid red;
 }
 
 /************ sorting order ***********/
@@ -739,7 +738,7 @@ ul.footer-networks{
   display: flex;
   width: 760px;
   height: 42px;
-  outline: 1px solid red;
+  *outline: 1px solid red;
 }
 
 .sorting-types, .sorting-order {
@@ -783,7 +782,7 @@ ul.footer-networks{
 .catalog {
   width: 760px;
   min-height: 2044px;
-  outline: 1px solid red;
+  *outline: 1px solid red;
 }
 
 .catalog-list {
@@ -791,7 +790,7 @@ ul.footer-networks{
   justify-content: flex-start;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
+  margin: 0 0 60px 0;
   padding: 0;
 }
 
@@ -799,11 +798,11 @@ ul.footer-networks{
   box-sizing: border-box;
   position: relative;
   margin-top: 35px;
-  padding-top: 40px;
+  padding-top: 39px;
   width: 360px;
   font-size: 0;
   *min-height: 110px;
-  outline: 1px solid red;
+  *outline: 1px solid red;
 }
 
 .catalog-item:nth-child(odd) {
@@ -813,14 +812,12 @@ ul.footer-networks{
 .catalog-item > a {
   display: block;
   background-color: blue;
-  font-size: 0;
-  outline: 1px solid blue;
+  *outline: 1px solid blue;
 }
 
 .catalog-item img {
-  *width: 100%;
-  *min-height: 575px;
-  outline: 1px solid green;
+  display: block;
+  *outline: 1px solid green;
 }
 
 .catalog-item:hover .catalog-item-offer
@@ -831,6 +828,7 @@ ul.footer-networks{
 .catalog-item-offer {
   display: none;
   position: absolute;
+  bottom:0;
   width: 100%;
   height: 230px;
   text-align: center;
@@ -864,13 +862,19 @@ ul.footer-networks{
 
 .pagination-list
 {
+  display:flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 445px;
 }
 
 .pagination-item a
 {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
   color: #000000;
   background-color: #eeeeee;
 
