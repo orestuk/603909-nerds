@@ -43,14 +43,14 @@ a {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
+  outline: 1px solid red;
 }
 
 /**** main-header *********/
 
 .main-header {
-  margin-bottom: 80px;
   padding-top: 50px;
-
+  margin-bottom: 80px;
   background-color: #eeeeee;
 
   min-height: 490px;
@@ -461,6 +461,7 @@ ul.figures-list {
 .footer-contacts {
   position: relative;
   min-height: 416px;
+  margin-bottom: 71px;
 
   *outline: 2px solid red;
 }
@@ -468,7 +469,6 @@ ul.figures-list {
 .footer-contacts-info {
   position: absolute;
   top: 55px;
-
 
   width: 319px;
   height: 308px;
@@ -522,13 +522,49 @@ ul.figures-list {
   background-color: #d7373b;
 }
 
-.footer-networks {
+.footer-social {
+  display: flex;
+  min-height: 82px;
+}
+
+ul.footer-networks{
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-networks {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  min-height: 82px;
+  margin-right: 140px;
+}
+
+.footer-discount {
+  width: 560px;
+  height: 82px;
 }
 
 .social-button {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+
   color: #ffffff;
-  background-color: #e1e1e1;
+}
+
+.button-facebook {
+  background: url("../img/fb-icon.svg")  #e1e1e1 center center no-repeat;
+}
+
+.button-vk {
+  background: url("../img/vk-icon.svg")  #e1e1e1 center center no-repeat;
+}
+
+.button-instagram {
+  background: url("../img/insta-icon.svg")  #e1e1e1 center center no-repeat;
 }
 
 .social-button:hover,
@@ -544,6 +580,7 @@ ul.figures-list {
 
 .footer-friends
 {
+  margin: 0 0 -5px 0;
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
@@ -621,28 +658,56 @@ ul.figures-list {
   background-color: #d7373b;
 }
 
-/**************************************** Catalog *********************************/
+/**********************************************************************************************************************/
+/************************************************ Catalog *************************************************************/
+/**********************************************************************************************************************/
 
-.page-title{
+.catalog-main-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+
+  outline: 1px solid red;
+}
+
+.catalog-header {
+  min-height: 305px;
+  margin-bottom: 55px;
+}
+
+.catalog-page-title{
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   text-align: center;
+
+  margin-top: 70px;
 }
 
-.filter fieldset {
+.filters {
+  width:  260px;
+  min-height: 272px;
+
+  outline: 1px solid red;
+}
+
+.filter-form fieldset {
   border: none;
+  margin:0;
+  padding: 0;
 }
 
-.filter legend {
+.filter-form legend {
   font-size: 18px;
   line-height: 30px;
+  letter-spacing: 1px;
+  margin: 0;
   font-weight: bold;
 
   text-transform: uppercase;
 }
 
-.filter ul {
+.filter-form ul {
   list-style: none;
 
   line-height: 20px;
@@ -660,9 +725,25 @@ ul.figures-list {
   opacity: 0.3;
 }
 
+.sorting-catalog-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 760px;
+  outline: 1px solid red;
+}
+
 /************ sorting order ***********/
 
-ul.sorting-types, ul.sorting-order {
+.sorting {
+  display: flex;
+  width: 760px;
+  height: 42px;
+  outline: 1px solid red;
+}
+
+.sorting-types, .sorting-order {
+  display: flex;
   list-style: none;
   font-size: 14px;
   line-height: 18px;
@@ -692,20 +773,54 @@ ul.sorting-types, ul.sorting-order {
 .sorting h2 {
   font-size: 18px;
   line-height: 18px;
+  margin: 0;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 /************ catalog list ************/
 
-.catalog-list {
-  list-style: none;
-  width: auto;
+.catalog {
+  width: 760px;
+  min-height: 2044px;
+  outline: 1px solid red;
 }
 
-.catalog-item{
+.catalog-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  box-sizing: border-box;
   position: relative;
+  margin-top: 35px;
+  padding-top: 40px;
   width: 360px;
+  font-size: 0;
+  *min-height: 110px;
+  outline: 1px solid red;
+}
+
+.catalog-item:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.catalog-item > a {
+  display: block;
+  background-color: blue;
+  font-size: 0;
+  outline: 1px solid blue;
+}
+
+.catalog-item img {
+  *width: 100%;
+  *min-height: 575px;
+  outline: 1px solid green;
 }
 
 .catalog-item:hover .catalog-item-offer
@@ -716,7 +831,6 @@ ul.sorting-types, ul.sorting-order {
 .catalog-item-offer {
   display: none;
   position: absolute;
-  bottom: 5px;
   width: 100%;
   height: 230px;
   text-align: center;
@@ -751,6 +865,8 @@ ul.sorting-types, ul.sorting-order {
 .pagination-list
 {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item a
