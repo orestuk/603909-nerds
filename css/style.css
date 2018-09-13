@@ -1,9 +1,5 @@
 html {     -webkit-font-smoothing: antialiased; }
 
-.visually-hidden {
-  display: none;
-}
-
 body {
   width: 1440px;
   height: 2476px;
@@ -22,17 +18,41 @@ a {
   text-decoration: none;
 }
 
+
+img {
+  max-width: 100%;
+  height: auto;
+  outline: 1px solid;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /***** Button *********/
 
 .button {
+  display: inline-block;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
-
-  padding: 10px;
 
   border: none;
 }
@@ -58,10 +78,9 @@ a {
 
 .main-navigation {
   display: flex;
-
   justify-content: space-between;
 
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 
   line-height: 30px;
   text-transform: uppercase;
@@ -74,6 +93,9 @@ a {
 
 .site-navigation,
 .user-navigation {
+  display: flex;
+  justify-content: space-between;
+
   list-style: none;
   margin-top: 25px;
   padding: 0;
@@ -82,19 +104,34 @@ a {
 
 .site-navigation {
   width: 439px;
-  display: flex;
-  justify-content: space-between;
 
   /* Временно*/
   *outline: 1px solid red;
 }
 
 .user-navigation {
-  width: 75px;
+  position: relative;
 
   margin-left: auto;
   /* Временно*/
   *outline: 1px solid red;
+  width: 115px;
+}
+
+.user-navigation .basket-link {
+  position: relative;
+  padding-left: 40px;
+}
+
+.basket-link::before {
+  content:"";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 8px;
+  left: 0;
+  opacity: 0.3;
+  background: url("../img/cart-icon.svg") no-repeat 0 0 transparent;
 }
 
 .main-header-logo {
@@ -130,8 +167,7 @@ a {
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
-.user-navigation a:focus
-{
+.user-navigation a:focus {
   color: #fb565a;
 }
 
@@ -146,7 +182,7 @@ a {
 
 .site-navigation-active {
   color: #000000;
-  text-decoration: underline;
+  border-bottom: 2px solid #fb565a;
 }
 
 /********* Index / Advantages *******/
@@ -179,6 +215,7 @@ a {
 .advantage-button
 {
   display: block;
+  padding: 10px 10px;
   width: 220px;
   height: 29px;
   font-weight: 500;
@@ -231,6 +268,7 @@ a {
   width: 300px;
   min-height: 348px;
   position: relative;
+  outline: 3px solid green;
 }
 
 .service-item h3 {
@@ -238,16 +276,22 @@ a {
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
+  margin-top: 29px;
+}
+
+.service-item p {
+  margin: 0 0 32px 0;
+}
+
+.service-item img {
+  display: block;
 }
 
 .service-button
 {
-  position:absolute;
-  bottom: 0;
-  display: block;
-
   width: 140px;
+  padding: 10px 10px;
 
   line-height: 30px;
   text-align: center;
