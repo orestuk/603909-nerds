@@ -125,7 +125,7 @@
     <section class="clients">
       <h2 class="visually-hidden">Наши клиенты</h2>
       <ul class="clients-list">
-        <li class="clients-item"><a class="clients-academy" href="#"><img src="img/logo-1.png" alt="HTML Academy"></a></li>
+        <li class="clients-item"><a class="clients-academy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="HTML Academy"></a></li>
         <li class="clients-item"><a class="clients-borodinski" href="#"><img src="img/logo-2.png" alt="Borodinski"></a></li>
         <li class="clients-item"><a class="clients-pink" href="#"><img src="img/logo-3.png" alt="Pink"></a></li>
         <li class="clients-item"><a class="clients-mishka" href="#"><img src="img/logo-4.png" alt="Mishka"></a></li>
@@ -182,24 +182,25 @@
     </div>
     </div>
   </footer>
+
   <section class="modal modal-write-us">
     <h2>Напишите нам</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="write-us-item write-us-name">
         <label for="question-user-name">Ваше имя:</label>
         <input type="text" id="question-user-name" name="userName" placeholder="Имя Фамилия">
       </p>
-      <p>
+      <p class="write-us-item write-us-email">
         <label for="question-user-email">Ваш e-mail:</label>
         <input type="email"  id="question-user-email" name="userEmail" placeholder="email@example.com">
       </p>
-      <p>
+      <p class="write-us-item write-us-text">
         <label for="question-text">Текст письма:</label>
-        <textarea id="question-text" name="text" rows="4" placeholder="В свободной форме"></textarea>
+        <textarea id="question-text" name="text" rows="5" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button write-us-button" type="submit">Отправить</button>
     </form>
-    <span class="modal-close" tabindex="0">Закрыть</span>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
   </body>
 </html>
