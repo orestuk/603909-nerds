@@ -1246,12 +1246,14 @@ ul.figures-list {
 }
 
 .catalog-item-offer {
+  box-sizing: border-box;
   display: none;
   position: absolute;
   bottom:0;
   width: 100%;
   min-height: 230px;
   text-align: center;
+  padding: 0 60px;
 
   line-height: 18px;
 
