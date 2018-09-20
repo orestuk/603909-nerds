@@ -1,9 +1,12 @@
 html {     -webkit-font-smoothing: antialiased; }
 
+/***** correction main for IE11 ******/
+main {
+	display:block;
+}
+
 body {
   width: 1440px;
-  height: 2476px;
-
   margin: 0 auto;
   padding: 0;
 
@@ -14,6 +17,10 @@ body {
   color: #283136;
 }
 
+h1, h2, h3 {
+  color: #000000;
+}
+
 a {
   text-decoration: none;
 }
@@ -21,7 +28,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  *outline: 1px solid;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -65,7 +71,6 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  *outline: 1px solid red;
 }
 
 /**** main-header *********/
@@ -83,9 +88,6 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 500;
-
-  /* Временно*/
-  *outline: 1px solid red;
 }
 
 .site-navigation,
@@ -99,17 +101,12 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   width: 439px;
-
-  /* Временно*/
-  *outline: 1px solid red;
 }
 
 .user-navigation {
   position: relative;
 
   margin-left: auto;
-  /* Временно*/
-  *outline: 1px solid red;
   width: 115px;
 }
 
@@ -134,9 +131,6 @@ input[type="radio"].visually-hidden {
   height: 65px;
 
   margin-right: 202px;
-
-  /* Временно*/
-  *outline: 1px solid red;
 }
 
 .main-header-logo:hover,
@@ -166,8 +160,6 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a:active,
-.site-navigation a:active,
-.user-navigation a:active,
 .user-navigation a:active
 {
   color: #000000;
@@ -329,8 +321,6 @@ input[type="radio"].visually-hidden {
   padding-right: 60px;
   margin-bottom: 78px;
   min-height: 348px;
-  /*Временно */
-  *outline: 1px solid red;
 }
 
 .services-list
@@ -342,16 +332,12 @@ input[type="radio"].visually-hidden {
   list-style: none;
   padding:0;
   margin:0;
-
-  /*Временно */
-  *outline: 1px solid red;
 }
 
 .service-item {
   width: 300px;
   min-height: 348px;
   position: relative;
-  *outline: 3px solid green;
 }
 
 .service-item h3 {
@@ -531,7 +517,6 @@ input[type="radio"].visually-hidden {
   width: 360px;
   padding-top: 38px;
   text-align: center;
-  *outline: 2px solid red;
 }
 
 .studio-figures img {
@@ -582,8 +567,6 @@ ul.figures-list {
   box-sizing: border-box;
 
   text-align: center;
-
-  *outline: 1px solid red;
 }
 
 
@@ -640,8 +623,6 @@ ul.figures-list {
   position: relative;
   min-height: 416px;
   margin-bottom: 71px;
-
-  *outline: 2px solid red;
 }
 
 .footer-contacts-info {
@@ -656,8 +637,6 @@ ul.figures-list {
 
   padding-top: 45px;
   padding-left: 50px;
-
-  *outline: 2px solid red;
 }
 
 .footer-contacts-info h2
@@ -760,6 +739,7 @@ ul.figures-list {
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
+  color: #000000;
 }
 
 .footer-discount
@@ -842,8 +822,6 @@ ul.figures-list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0;
-
-  *outline: 1px solid red;
 }
 
 .catalog-header {
@@ -953,8 +931,6 @@ ul.figures-list {
 .filters {
   width:  260px;
   min-height: 272px;
-
-  *outline: 1px solid red;
 }
 
 .filter fieldset {
@@ -971,13 +947,13 @@ ul.figures-list {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
+  color: #000000;
 
   margin-bottom: 0;
 }
 
 .filter-grid legend,
-.filter-features legend
-{
+.filter-features legend {
   margin-bottom: 18px;
 }
 
@@ -1001,7 +977,6 @@ ul.figures-list {
 .filter-option {
   margin-bottom: 20px;
   padding-left: 35px;
-  *outline: 1px solid red;
 }
 
 .filter-input + label {
@@ -1108,7 +1083,6 @@ ul.figures-list {
   flex-direction: column;
 
   width: 760px;
-  *outline: 1px solid red;
 }
 
 /************ sorting order ***********/
@@ -1118,7 +1092,6 @@ ul.figures-list {
   align-items: baseline;
   width: 760px;
   height: 42px;
-  *outline: 1px solid red;
 }
 
 .sorting-types, .sorting-order {
@@ -1180,7 +1153,6 @@ ul.figures-list {
   width: 760px;
   min-height: 2044px;
   margin-bottom: 60px;
-  *outline: 1px solid red;
 }
 
 .catalog-list {
@@ -1288,6 +1260,23 @@ ul.figures-list {
   border-radius: 3px;
 }
 
+.catalog-item-button
+{
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #fb565a;
+  display: block;
+  width: 200px;
+  padding: 16px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 43px;
+  margin-top: 31px;
+  border-radius: 3px;
+}
+
 /****** pagination **********/
 
 .pagination-list
@@ -1367,8 +1356,6 @@ ul.figures-list {
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
-
-  *outline: 1px solid red;
 }
 
 .modal-close {
