@@ -8,7 +8,7 @@ var userText = popup.querySelector("[name=userText]");
 
 var removeValidationErrors = function () {
   userName.classList.remove("modal-validation-error");
-  userEmail.classList.add("modal-validation-error");
+  userEmail.classList.remove("modal-validation-error");
   userText.classList.remove("modal-validation-error");
 }
 
